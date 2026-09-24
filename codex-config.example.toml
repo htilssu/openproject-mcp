@@ -1,0 +1,15 @@
+[mcp_servers.openproject]
+command = "node"
+args = ["D:/tools/openproject-mcp/dist/index.js"]
+enabled = true
+
+[mcp_servers.openproject.env]
+OPENPROJECT_URL = "https://openproject.example.com"
+OPENPROJECT_API_TOKEN = "REPLACE_ME"
+OPENPROJECT_ALLOW_WRITE = "true"
+
+# Only needed if OpenProject does not support direct attachment upload and this MCP
+# process exposes the relay port through a public/reachable URL.
+OPENPROJECT_RELAY_ENABLED = "false"
+# OPENPROJECT_RELAY_PUBLIC_BASE_URL = "https://openproject-mcp.example.com"
+# OPENPROJECT_RELAY_SECRET = "replace-with-at-least-32-random-characters"
